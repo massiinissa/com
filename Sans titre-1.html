@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>واجهة تسجيل الدخول</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+		}
+
+		h1 {
+			text-align: center;
+			color: #444;
+		}
+
+		form {
+			border: 3px solid #f1f1f1;
+			max-width: 500px;
+			margin: 0 auto;
+			background-color: white;
+			padding: 20px;
+		}
+
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		button:hover {
+			opacity: 0.8;
+		}
+
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+
+		.container {
+			padding: 16px;
+		}
+
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+
+		@media screen and (max-width: 300px) {
+			span.psw {
+			   display: block;
+			   float: none;
+			}
+			.cancelbtn {
+			   width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<h1>تسجيل الدخول</h1>
+
+	<form action="/action_page.php">
+		<div class="mandala 1">
+			<img src=" https://scontent.falg5-1.fna.fbcdn.net/v/t39.30808-6/332309744_1327592094483633_1937579928604952598_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-XffXUC8c7sAX9ruu7d&_nc_ht=scontent.falg5-1.fna&oh=00_AfCID1HfgNkK4jV7PPHGW1gpPrfxy0QMdGJHyTdTugIP7g&oe=6410E9C6" style="width: 128px; height:128px;">
+		</div>
+
+		<div class="container">
+			<label for="uname"><b>اسم المستخدم</b></label>
+			<input type="text" placeholder="أدخل اسم المستخدم" name="uname" required>
+
+			<label for="psw"><b>كلمة المرور</b></label>
+			<input type="password" placeholder="أدخل كلمة المرور" name="psw" required>
+
+			<button type="submit">تسجيل الدخول</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> تذكرني
+			</label>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" class="cancelbtn">إلغاء</button>
+			<span class="psw">نسيت <a href="#">كلمة المرور؟</a></span>
+		</div>
+	</form>
+
+</body>
+</html>
